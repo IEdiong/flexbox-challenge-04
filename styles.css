@@ -1,0 +1,121 @@
+/* ? General styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3125rem;
+  line-height: 1.2;
+  color: #222c2a;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ? Typography styles */
+h1,
+h2 {
+  margin-top: 0;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+/* ? Reusable components */
+section {
+  padding: 3em 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 2.25rem;
+}
+
+.section-title--dark {
+  color: #824936;
+  text-align: center;
+}
+
+/* ? Body styles */
+.intro {
+  background: #f3eed9;
+  min-height: 660px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.intro__text {
+  font-size: 0.85rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.intro__title {
+  font-size: 3rem;
+  color: #824936;
+}
+
+.section-two {
+  text-align: center;
+}
+
+.section-three {
+  background: #222c2a;
+  color: #fff;
+}
+
+.section-four {
+  background: #824936;
+  color: #fff;
+}
+
+/* ? Larger screen sizes */
+@media (min-width: 768px) {
+  /* ? Typography styles */
+  .section-title {
+    margin-top: 0;
+  }
+
+  /* ? Reusable components */
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .col {
+    width: 46%;
+  }
+
+  /* ? Body styles */
+  .intro__text {
+    font-size: 1.125rem;
+  }
+
+  .intro__title {
+    font-size: 3.75rem;
+  }
+
+  .section-two {
+    text-align: left;
+  }
+}
